@@ -1,0 +1,1 @@
+This project reveals the user's Akan name for different birth dates.
