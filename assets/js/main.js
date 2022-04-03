@@ -1,6 +1,8 @@
 const male = document.getElementById("maleRadio")
 const female = document.getElementById("femaleRadio")
 const myDate = document.getElementById("birthDate")
+let title = document.getElementById("title");
+let text = document.getElementById("text");
 
 let day;
 
@@ -11,7 +13,6 @@ const getDate = () => {
         var dateEntered = new Date(input)
 
         day = dateEntered.getDay()
-        alert(day)
     })
 }
 
@@ -49,14 +50,13 @@ const dayOfTheWeek = () => {
             document.getElementById("akan-name").innerHTML = "Ama";
         }
     }
-
 }
 
 const validate = () => {
     if (((male.checked)  == false) && ((female.checked) == false)) {
         document.getElementById("messageOne").innerHTML = "Please select your gender";
-      }
-else if ( ((((male.checked)  == false) && ((female.checked) == false))) ) {
+    }
+    else if ( ((((male.checked)  == false) && ((female.checked) == false))) ) {
     document.getElementById("messageOne").innerHTML =
         "Fill your date and Gender";
     }else{
@@ -64,16 +64,13 @@ else if ( ((((male.checked)  == false) && ((female.checked) == false))) ) {
     document.querySelector(".display").style.display = "block";
     dayOfTheWeek();
     // getDate()
-
     }
-
 }
+
+getDate()
 
 
 document.getElementById("btn").addEventListener("click", (e) => {
     e.preventDefault()
-    getDate()
     validate()
-
-
 })
