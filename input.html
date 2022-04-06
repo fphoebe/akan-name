@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkanCulture</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/01b4b6f929.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header section begins-->
+    <section class="header-section container-fluid text-center">
+        <p class="logo">AkanCulture</p>
+    </section>
+    <!-- Header section ends -->
+
+
+<!-- Main section begins -->
+    <section class="main-section">
+        <div class="ankara-print">
+            <img src="assets/images/ankara-print.jpg" alt="">
+        </div>
+        <div class="row form">
+            <div class="col-md-6 col-sm-12 main-msg">
+                <div class="input-form">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                          <input type="date" class="form-control" id="birthDate" aria-describedby="">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="maleRadio">
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="femaleRadio">
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                        </div> 
+                        
+                        <div id="messageOne" class="text-danger mb-4"></div>
+                        
+                        <button id="btn" class="btn my-5">Get my Akan name</button>
+                    </form>   
+                    <p>Akan refers to the language of the Akan ethnolinguistic group and the Akan language which was and is the most widely spoken and used indigenous language in the akan tribes. Each tribe having its own dialect.</p>             
+                </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block main-image">
+                <img src="assets/images/input-image.jpg" alt="Africa">
+            </div>
+        </div>
+        
+        <!-- Div where the output name is displayed -->
+        <div class="display">
+            <div class="main-text">
+                <span class="p smaller-text">Your Akan name is</p>
+                <div class="akan-name pt-5">
+                    <p id="akan-name"></p>
+                </div>
+                <p id="text" class="smaller-text pt-5"></p>
+            </div>
+        </div>
+
+        <div class="ankara-print">
+            <img src="assets/images/ankara-print.jpg" alt="">
+        </div>
+    </section>
+    <!-- Main section ends -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
